@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Product.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="conatiner">
+
+    <h1 class="title">Product Order Form</h1>
+    
+   <form class="product-form"  id="myform" name="myform" >
+       <div class="name">
+           <label class="name-label">First Name</label> 
+         <input id="fname" type="text" name="name" class="form" placeholder="Enter Your first name">
+         <p class="text-color" id="namevalidation-error"></p>
+          
+         
+           <!-- <div class="error" id="nameErr"></div> -->
+         
+           <label class="name-label1">Last Name</label>
+           <input id="lname" type="text" name="name" class="form" placeholder="Enter Your last name">
+           <p class="text-color" id="lastnamevalidation-error"></p>
+         </div>
+         <div class="email">
+             <label class="email-label">Email</label>
+             <input id="email" type="email" name="email" class=" form form1" placeholder="myname@example.com">
+             <p class="text-color" id="emailvalidation-error"></p>
+
+         </div>
+         <div class="email">
+             <label class="contact-label">Contact Number</label>
+             <input id="contact" type="tel" name="contact" class=" form form1" placeholder="(000) 000-0000" maxlength="10">
+             <p class="text-color " id="contactvalidation-error"></p>
+
+         </div>
+
+         <div class="Address">
+             <label class="Address-label">Address</label>
+             <textarea id="Address"  name="Address"class="form form2 textarea" placeholder="Enter Your Address..."></textarea>
+             <p class="text-color" id="Addressvalidation-error"></p>
+            
+         </div>
+         <div class="city">
+             <label class="city-label">City</label>
+             <input id="city" type="text" name="City" class=" form" placeholder="City" >
+             <p class="text-color" id="cityvalidation-error"></p>
+
+             
+             <label class="country-label">Country</label>
+             <!-- <input type="text" name="City" class=" form" placeholder="Please-select" required> -->
+             <select id="country" name="country" class="form"  >
+                 <option value="select Country">Select Country</option>
+                 <option value="India">India</option>
+                 <option value="Germany">Germany</option>
+                 <option value="Canada">Canada</option>
+                 <option value="Australia">Australia</option>
+                 <option value="New Zealand">New Zealand</option>
+             </select>    
+             <p class="text-color" id="countryvalidation-error"></p>
+         </div>
+
+         <div class="order-date">
+             <label class="date">Order-Date</label>
+             <input  id="date" type="date" name="order-date" class="form">
+             <p class="text-color" id="date-error"></p>
+
+         </div>
+
+         <div class="shipping-address">
+             <p class="s-address">Is shipping address same as billing address?</p>
+             <label class="radio-label"><input name="radio-btn" type="radio" class="input-radio" value="Yes" >Yes</label>
+            <label class="radio-label"><input name="radio-btn"  type="radio" class="input-radio" value="No">No</label> 
+            <p class="text-color" id="radio-btn"></p>
+
+         </div>
+
+         <div class="Product">
+             <p class="product1">Product List</p>
+             <div class="check">
+                <label><input type="checkbox" name="checkbox-Pants" class="input-checkout" value="Pants">Pants</label> 
+                 <label><input type="checkbox" name="checkbox-T-shirt" class="input-checkout" value="T-shirt">T-shirt</label>
+                 <label><input type="checkbox" name="checkbox-shoes" class="input-checkout" value="Shoes">Shoes</label>
+                <label><input type="checkbox" name="checkbox-sun-glasses" class="input-checkout" value="Sun Glasses">Sun Glasses</label> 
+
+                <p class="text-color" id="check-btn"></p>
+
+             </div>
+             
+
+         </div>
+
+         <div class="img">
+             <input type="file"  class="black" id="file-img" onchange="imagevalidation();">
+
+         </div>
+
+         
+         <div class="submit">
+             <button id="btn" type="submit" class="submit-btn" >Submit</button>
+
+         </div> 
+        </form>
+
+       <table  class="table-info">
+           <thead id="table-head">
+
+           </thead>
+           <tbody id="table-body">
+
+           </tbody>
+       </table>
+       <script src="index.js"></script>
+
+</body>
+</html>
